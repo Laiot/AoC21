@@ -1,3 +1,3 @@
-module go_test/hello
+module main
 
 go 1.17
