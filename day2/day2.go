@@ -33,7 +33,7 @@ func HandleStringInputFile(path string) []string {
 }
 
 func D2Part1() {
-	var in []string = HandleStringInputFile("inputs/in2.txt")
+	var in []string = HandleStringInputFile("day2/in2.txt")
 
 	x := 0
 	y := 0
@@ -61,7 +61,7 @@ func D2Part1() {
 }
 
 func D2Part2() {
-	var in []string = HandleStringInputFile("inputs/in2.txt")
+	var in []string = HandleStringInputFile("day2/in2.txt")
 
 	x := 0
 	y := 0

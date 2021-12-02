@@ -36,7 +36,7 @@ func HandleIntegerInputFile(path string) []int {
 }
 
 func D1Part1() {
-	in := HandleIntegerInputFile("in1.txt")
+	in := HandleIntegerInputFile("day1/in1.txt")
 	res := 0
 
 	for i, tmp := 0, in[0]; i < len(in); i++ {
@@ -49,7 +49,7 @@ func D1Part1() {
 }
 
 func D1Part2() {
-	in := HandleIntegerInputFile("in1.txt")
+	in := HandleIntegerInputFile("day1/in1.txt")
 
 	res := 0
 	tmp := in[0] + in[1] + in[2]

@@ -6,8 +6,8 @@ import (
 	"os"
 	"strings"
 
-	"./day1"
-	"./day2"
+	"github.com/Laiot/AoC21/day1"
+	"github.com/Laiot/AoC21/day2"
 )
 
 func main() {
