@@ -1,11 +1,36 @@
-package main
+package day2
 
 import (
+	"bufio"
 	"fmt"
+	"log"
 	"os"
 	"strconv"
 	"strings"
 )
+
+func PutInputIntoStringArray(file *os.File) []string {
+	scanner := bufio.NewScanner(file)
+	var in []string
+	for scanner.Scan() {
+		i := scanner.Text()
+		in = append(in, i)
+	}
+
+	if err := scanner.Err(); err != nil {
+		log.Fatal(err)
+	}
+	defer file.Close()
+	return in
+}
+
+func HandleStringInputFile(path string) []string {
+	file, err := os.Open(path)
+	if err != nil {
+		log.Fatal(err)
+	}
+	return PutInputIntoStringArray(file)
+}
 
 func D2Part1() {
 	var in []string = HandleStringInputFile("inputs/in2.txt")

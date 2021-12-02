@@ -5,6 +5,9 @@ import (
 	"fmt"
 	"os"
 	"strings"
+
+	"./day1"
+	"./day2"
 )
 
 func main() {
@@ -21,14 +24,14 @@ func main() {
 		switch text {
 		case "1":
 			fmt.Println("\nThe solution for Part 1 is: ")
-			D1Part1()
+			day1.D1Part1()
 			fmt.Println("\nThe solution for Part 2 is: ")
-			D1Part2()
+			day1.D1Part2()
 		case "2":
 			fmt.Println("\nThe solution for Part 1 is: ")
-			D2Part1()
+			day2.D2Part1()
 			fmt.Println("\nThe solution for Part 2 is: ")
-			D2Part2()
+			day2.D2Part2()
 		case "q":
 			quitflag = true
 

@@ -1,4 +1,4 @@
-package main
+package day1
 
 import (
 	"bufio"
@@ -35,25 +35,32 @@ func HandleIntegerInputFile(path string) []int {
 	return PutInputIntoIntArray(file)
 }
 
-func PutInputIntoStringArray(file *os.File) []string {
-	scanner := bufio.NewScanner(file)
-	var in []string
-	for scanner.Scan() {
-		i := scanner.Text()
-		in = append(in, i)
-	}
+func D1Part1() {
+	in := HandleIntegerInputFile("in1.txt")
+	res := 0
 
-	if err := scanner.Err(); err != nil {
-		log.Fatal(err)
+	for i, tmp := 0, in[0]; i < len(in); i++ {
+		if in[i] > tmp {
+			res += 1
+		}
+		tmp = in[i]
 	}
-	defer file.Close()
-	return in
+	fmt.Println(res)
 }
 
-func HandleStringInputFile(path string) []string {
-	file, err := os.Open(path)
-	if err != nil {
-		log.Fatal(err)
+func D1Part2() {
+	in := HandleIntegerInputFile("in1.txt")
+
+	res := 0
+	tmp := in[0] + in[1] + in[2]
+
+	for i := 0; i < len(in)-2; i++ {
+		sum := in[i] + in[i+1] + in[i+2]
+
+		if sum > tmp {
+			res += 1
+		}
+		tmp = sum
 	}
-	return PutInputIntoStringArray(file)
+	fmt.Println(res)
 }
