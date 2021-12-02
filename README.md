@@ -1,5 +1,6 @@
 # AoC21
-Advent Of Code solutions in GoLang
+Advent Of Code solutions in GoLang.
+Run `go run .` in order to start the cli.
 
 ## Solves
 
