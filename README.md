@@ -10,7 +10,7 @@ Run `go run .` in order to start the cli.
 |   2  | :heavy_check_mark: | :heavy_check_mark: |  |
 |   3  | :heavy_check_mark: | :heavy_check_mark: |  |
 |   4  | :heavy_check_mark: | :heavy_check_mark: |  |
-|   5  | :x: | :x: |  |
+|   5  | :heavy_check_mark: | :heavy_check_mark: | I should really re-write a lot of this code but today's a Sunday. |
 |   6  | :x: | :x: |  |
 |   7  | :x: | :x: |  |
 |   8  | :x: | :x: |  |
