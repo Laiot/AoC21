@@ -11,6 +11,7 @@ import (
 	"github.com/Laiot/AoC21/day3"
 	"github.com/Laiot/AoC21/day4"
 	"github.com/Laiot/AoC21/day5"
+	"github.com/Laiot/AoC21/day6"
 )
 
 func main() {
@@ -50,6 +51,11 @@ func main() {
 			day5.D5Part1()
 			fmt.Println("\nThe solution for Part 2 is: ")
 			day5.D5Part2()
+		case "6":
+			fmt.Println("\nThe solution for Part 1 is: ")
+			day6.D6Part1()
+			fmt.Println("\nThe solution for Part 2 is: ")
+			day6.D6Part2()
 		case "q":
 			quitflag = true
 
