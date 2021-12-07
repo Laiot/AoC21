@@ -73,7 +73,6 @@ func FishProgression(init_state *[]int, days int) int {
 func D6Part1() {
 	init_state := HandleIntegerInputFile("day6/in6.txt")
 	fmt.Println(FishProgression(&init_state, 80))
-
 }
 
 func D6Part2() {
